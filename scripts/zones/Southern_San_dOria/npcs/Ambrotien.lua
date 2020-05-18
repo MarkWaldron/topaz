@@ -62,7 +62,7 @@ function onTrigger(player,npc)
             player:startEvent(2000); -- Start First Mission "Smash the Orcish scouts"
         elseif (player:hasKeyItem(tpz.ki.ANCIENT_SANDORIAN_BOOK)) then
             player:startEvent(1036);
-        elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus",4) and player:needToZone() != false) then
+        elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus",4) and player:needToZone()) then
             player:startEvent(1037);
         elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus") == 4 and player:needToZone() == false) then -- Ready now.
             player:startEvent(1040);

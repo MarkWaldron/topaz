@@ -24,7 +24,6 @@ function onTrigger(player,npc)
     local MissionStatus = player:getCharVar("MissionStatus");
     local infiltrateDavoi = player:hasCompletedMission(SANDORIA,tpz.mission.id.sandoria.INFILTRATE_DAVOI);
 
-    local osdate = tonumber(os.date("%j"));
 
     if (player:getCharVar("aBoysDreamCS") == 8) then
         player:startEvent(88);

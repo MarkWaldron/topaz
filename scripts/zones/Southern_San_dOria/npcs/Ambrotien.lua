@@ -63,7 +63,7 @@ function onTrigger(player,npc)
         elseif (player:hasKeyItem(tpz.ki.ANCIENT_SANDORIAN_BOOK)) then
             player:startEvent(1036);
         elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus",4) and player:needToZone()) then
-            player:startEvent(1037);
+            player:startEvent(1038);
         elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus") == 4 and player:needToZone() == false) then -- Ready now.
             player:startEvent(1040);
         elseif (CurrentMission == tpz.mission.id.sandoria.RANPERRE_S_FINAL_REST and player:getCharVar("MissionStatus") == 6) then
